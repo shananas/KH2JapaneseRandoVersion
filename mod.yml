@@ -1,0 +1,324 @@
+title: Kingdom Hearts 2 Japanese Rando Version
+originalAuthor: Shananas
+game: kh2
+description: Makes KH2FM as close to KH2 Japanese as I am able. Makes 2FM abilites unequippable and Limit Form unusable. Still a WIP
+assets:
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: atkp
+    method: copy
+    source:
+    - name: 00battle.bin/jpatkp_0.list
+    type: List
+  - name: bons
+    method: copy
+    source:
+    - name: 00battle.bin/jpbons_0.list
+    type: List
+  - name: enmp
+    method: copy
+    source:
+    - name: 00battle.bin/jpenmp_0.list
+    type: List
+  - name: fmlv
+    method: copy
+    source:
+    - name: 00battle.bin/jpfmlv_0.list
+    type: List
+  - name: lvpm
+    method: copy
+    source:
+    - name: 00battle.bin/jplvpm_0.list
+    type: List
+  - name: lvup
+    method: copy
+    source:
+    - name: 00battle.bin/jplvup_0.list
+    type: List
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: cmd
+    method: copy
+    source:
+    - name: 03System.bin/jpcmd_0.list
+    type: List
+  - name: item
+    method: copy
+    source:
+    - name: 03System.bin/jpitem_0.list
+    type: List
+  - name: trsr
+    method: copy
+    source:
+    - name: 03System.bin/jptrsr_0.list
+    type: List
+  - name: pref
+    method: copy
+    source:
+    - name: 03System.bin/jppref_0.bin
+    type: Binary
+#Boss AI Stuff
+- name: obj/B_EX210.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/Luxord.bdx
+    type: Bdx
+- name: obj/B_EX170.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/Xemnas 1.bdx
+    type: Bdx
+- name: obj/B_EX180.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/AX2Big.bdx
+    type: Bdx
+- name: obj/B_EX260.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/AX2.bdx
+    type: Bdx
+- name: obj/B_EX170_Last.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/Final Xemnas.bdx
+    type: Bdx
+#Mset
+- name: obj/P_EX100.mset
+  method: copy
+  source:
+  - name: mset/P_EX100.mset
+- name: obj/P_EX100_MAGF.mset
+  method: copy
+  source:
+  - name: mset/P_EX100_MAGF.mset
+#Limits
+- name: limit/us/donald2.bar
+  multi:
+  - name: limit/fr/donald2.bar
+  - name: limit/gr/donald2.bar
+  - name: limit/it/donald2.bar
+  - name: limit/sp/donald2.bar
+  - name: limit/fm/donald2.bar
+  method: copy
+  source:
+  - name: limit/donald2.bar
+- name: limit/us/donald2_wi.bar
+  multi:
+  - name: limit/fr/donald2_wi.bar
+  - name: limit/gr/donald2_wi.bar
+  - name: limit/it/donald2_wi.bar
+  - name: limit/sp/donald2_wi.bar
+  - name: limit/fm/donald2_wi.bar
+  method: copy
+  source:
+  - name: limit/donald2_wi.bar
+#Ard
+- name: ard/us/eh03.ard
+  multi:
+  - name: ard/fr/eh03.ard
+  - name: ard/gr/eh03.ard
+  - name: ard/it/eh03.ard
+  - name: ard/sp/eh03.ard
+  - name: ard/eh03.ard
+  method: copy
+  source:
+  - name: ard/eh03.ard
+#PR Map Skip
+- name: msg/us/ca.bar
+  multi:
+  - name: msg/fr/ca.bar
+  - name: msg/gr/ca.bar
+  - name: msg/it/ca.bar
+  - name: msg/sp/ca.bar
+  method: binarc
+  source:
+  - name: ca
+    type: list
+    method: kh2msg
+    source:
+    - name: map_skip/ca.yml
+      language: en
+- name: libretto-ca.bar
+  method: copy
+  source:
+  - name: map_skip/libretto-ca.bar
+
+#remastered
+- name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar0.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar0.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar0.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar0.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar1.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar1.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar1.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar1.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar2.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar2.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar2.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar2.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar3.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar3.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar3.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar3.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar4.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar4.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar4.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar4.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar5.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar5.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar5.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar5.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar6.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar6.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar6.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar6.dds
+- name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar7.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar7.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar7.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2.bar/US_donald2_bar7.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar0.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar0.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar0.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar0.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar1.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar1.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar1.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar1.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar2.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar2.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar2.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar2.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar3.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar3.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar3.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar3.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar4.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar4.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar4.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar4.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar5.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar5.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar5.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar5.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar6.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar6.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar6.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar6.dds
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar7.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar7.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar7.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/donald2_wi.bar/US_donald2_wi_bar7.dds
