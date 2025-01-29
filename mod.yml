@@ -36,6 +36,16 @@ assets:
     source:
     - name: 00battle.bin/jplvup_0.list
     type: List
+  - name: plrp
+    method: copy
+    source:
+    - name: 00battle.bin/jpplrp_0.list
+    type: List
+  - name: przt
+    method: copy
+    source:
+    - name: 00battle.bin/jpprzt_0.list
+    type: List
 - name: 03system.bin
   method: binarc
   source:
@@ -322,3 +332,429 @@ assets:
   method: copy
   source:
   - name: remastered/donald2_wi.bar/US_donald2_wi_bar7.dds
+
+#RV + AI
+- name: obj/N_WI010_BTL_VS.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_WI010_BTL_VS.bdx
+    type: Bdx
+- name: obj/N_WI010_BTL.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_WI010_BTL.bdx
+    type: Bdx
+- name: obj/N_HE010_BTL_CLSM.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HE010_BTL_CLSM.bdx
+    type: Bdx
+- name: obj/N_HE010_BTL.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HE010_BTL.bdx
+    type: Bdx
+- name: obj/N_HB590_BTL.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HB590_BTL.bdx
+    type: Bdx
+- name: obj/N_HB580_BOSS.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HB580_BOSS.bdx
+    type: Bdx
+- name: obj/N_HB570_BOSS.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HB570_BOSS.bdx
+    type: Bdx
+- name: obj/N_HB550_BOSS.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HB550_BOSS.bdx
+    type: Bdx
+- name: obj/N_HB530_BOSS.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_HB530_BOSS.bdx
+    type: Bdx
+- name: obj/N_EX940_BTL.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX940_BTL.bdx
+    type: Bdx
+- name: obj/N_EX760_RTN.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX760_RTN.bdx
+    type: Bdx
+- name: obj/N_EX760_BTL_WILLY.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX760_BTL_WILLY.bdx
+    type: Bdx
+- name: obj/N_EX760_BTL_MEGARA.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX760_BTL_MEGARA.bdx
+    type: Bdx
+- name: obj/N_EX760_BTL_HERCULES.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX760_BTL_HERCULES.bdx
+    type: Bdx
+- name: obj/N_EX760_BTL_CLSM.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX760_BTL_CLSM.bdx
+    type: Bdx
+- name: obj/N_EX760_BTL.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/N_EX760_BTL.bdx
+    type: Bdx
+- name: obj/M_EX880_DANCER_EH.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/M_EX880_DANCER_EH.bdx
+    type: Bdx
+- name: obj/M_EX880_DANCER.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/M_EX880_DANCER.bdx
+    type: Bdx
+- name: obj/B_NM110_R_ARM.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_NM110_R_ARM.bdx
+    type: Bdx
+- name: obj/B_NM110_L_ARM.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_NM110_L_ARM.bdx
+    type: Bdx
+- name: obj/B_NM110_HEAD.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_NM110_HEAD.bdx
+    type: Bdx
+- name: obj/B_NM110.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_NM110.bdx
+    type: Bdx
+- name: obj/B_NM100.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_NM100.bdx
+    type: Bdx
+- name: obj/B_NM000.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_NM000.bdx
+    type: Bdx
+- name: obj/B_MU120.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_MU120.bdx
+    type: Bdx
+- name: obj/B_MU110.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_MU110.bdx
+    type: Bdx
+- name: obj/B_MU100.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_MU100.bdx
+    type: Bdx
+- name: obj/B_LK120.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_LK120.bdx
+    type: Bdx
+- name: obj/B_LK100.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_LK100.bdx
+    type: Bdx
+- name: obj/B_HE100.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_HE100.bdx
+    type: Bdx
+- name: obj/B_HE030_PART.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_HE030_PART.bdx
+    type: Bdx
+- name: obj/B_HE030_HE05.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_HE030_HE05.bdx
+    type: Bdx
+- name: obj/B_HE030_CLSM.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_HE030_CLSM.bdx
+    type: Bdx
+- name: obj/B_HE030.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_HE030.bdx
+    type: Bdx
+- name: obj/B_HE020.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_HE020.bdx
+    type: Bdx
+- name: obj/B_EX330.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX330.bdx
+    type: Bdx
+- name: obj/B_EX160.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX160.bdx
+    type: Bdx
+- name: obj/B_EX140.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX140.bdx
+    type: Bdx
+- name: obj/B_EX130.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX130.bdx
+    type: Bdx
+- name: obj/B_EX120_HB.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX120_HB.bdx
+    type: Bdx
+- name: obj/B_EX120.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX120.bdx
+    type: Bdx
+- name: obj/B_EX110.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX110.bdx
+    type: Bdx
+- name: obj/B_EX100.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_EX100.bdx
+    type: Bdx
+- name: obj/B_CA050.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_CA050.bdx
+    type: Bdx
+- name: obj/B_CA010.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_CA010.bdx
+    type: Bdx
+- name: obj/B_BB120.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_BB120.bdx
+    type: Bdx
+- name: obj/B_BB110.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_BB110.bdx
+    type: Bdx
+- name: obj/B_BB100.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_BB100.bdx
+    type: Bdx
+- name: obj/B_AL100_ICE.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_AL100_ICE.bdx
+    type: Bdx
+- name: obj/B_AL100_FIRE.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_AL100_FIRE.bdx
+    type: Bdx
+- name: obj/B_AL100_2ND.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_AL100_2ND.bdx
+    type: Bdx
+- name: obj/B_AL100_1ST.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_AL100_1ST.bdx
+    type: Bdx
+- name: obj/B_AL020.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    method: copy
+    source:
+    - name: AI/B_AL020.bdx
+    type: Bdx
